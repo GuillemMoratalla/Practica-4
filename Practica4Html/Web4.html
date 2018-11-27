@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>La web 4</title>
+        <meta name="author" content="Guillem Moratalla Canals">
+        <meta name="description" content="La meva quarta web">
+        <meta name="keywords" content="Smx2 Educem Granollers">
+        <meta charset="UTF-8">
+        <link rel="icon" href="./fav-icon.png">
+    </head>
+    <body>
+        <table cellpadding="7" align="center" border="0">
+            <!--AQUI POSARE EL CORREU ON S'ENVIARA TOT-->
+            <form action="mailto:guillemorata17@gmail.com?Subject=entrega4-m8-uf5" enctype="text/plain" method="POST">
+                <tr>
+                    <th colspan="2">
+                        <h1>Registre d'Alumnes SMX2</h1>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_nom">Nom:</label></th>
+                    <td><input id="id_nom" type="text" name="Nom" placeholder="Escriu el teu nom" size="60" maxlength="20" required autofocus></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_cognom">Cognoms:</label></th>
+                    <td><input id="id_cognom" type="text" name="Cognoms" placeholder="Escriu els teus cogonoms" size="60" maxlength="80" required></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_correu">E-mail:</label></th>
+                    <td><input id="id_correu" type="email" name="Correu" placeholder="Escriu el teu email" size="30" maxlength="30" required></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_color">Color preferit:</label></th>
+                    <td><input id="id_color" type="color" name="Color" value="#FF0000" required></td>
+                </tr>
+                <tr>
+                    <!--EL ROWSPAN SERVEIX PER JUNTAR FILES-->
+                    <th align="left" rowspan="7">Mòduls Preferits de SMX2:</th>
+                </tr>
+                <tr>
+                    <td><input id="id_m4" type="checkbox" name="Modul Preferit" value="M4"><label for="id_m4">M4-Sistemes Operatius en xarxa</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_m6" type="checkbox" name="Modul Preferit" value="M6"><label for="id_m6">M6-Seguretat informàtica</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_m7" type="checkbox" name="Modul Preferit" value="M7"><label for="id_m7">M7-Serveis en xarxa</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_m8" type="checkbox" name="Modul Preferit" value="M8"><label for="id_m8">M8-Aplicacions web</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_m10" type="checkbox" name="Modul Preferit" value="M10"><label for="id_m10">M10-Empresa i iniciativa emprenedora</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_m11" type="checkbox" name="Modul Preferit" value="M11"><label for="id_m11">M11-Angles Tècnic</label><br></td>
+                </tr>
+                <tr>
+                    <th align="left" rowspan="6"><label>Què voldrires fer després d'acabar SMX?</label></th>
+                </tr>
+                <tr>
+                    <td><input id="id_dam" type="radio" name="Eleccio" value="DAM"><label for="id_dam">DAM</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_asix" type="radio" name="Eleccio" value="ASIX"><label for="id_asix">ASIX</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_enginyeria" type="radio" name="Eleccio" value="Enginyeria Informàtica"><label for="id_enginyeria">Enginyeria Informàtica</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_treballar" type="radio" name="Eleccio" value="Treballar"><label for="id_treballar">Treballar</label><br></td>
+                </tr>
+                <tr>
+                    <td><input id="id_res" type="radio" name="Eleccio" value="Res"><label for="id_res">Res</label><br></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_opinio">Què t'està semblant el llenguatge HTML?</label></th>
+                    <td><select id="id_opinio" name="Opinio" value="ok">
+                        <option value="M'ha agradat molt">M'ha agradat molt</option>
+                        <option value="M'ha agradat" selected>M'ha agradat</option>
+                        <option value="Ni fu ni fa">Ni fu ni fa</option>
+                        <option value="No m'ha agradat gaire">No m'ha agradat gaire</option>
+                        <option value="No m'ha agradat gens">No m'ha agradat gens</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_notaesperada">Nota que esperes d'aquesta entrega</label></th>
+                    <td><input id="id_notaesperada" name="Nota esperada" type="number" min="0" max="10" value="5" size="20"></td>
+                </tr>
+                <tr>
+                    <th align="left"><label for="id_password">Escriu un password per xifrar l'entrega:</label></th>
+                    <td><input id="id_password" type="password" name="Contrasenya" placeholder="Escriu un password" width="10" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input id="id_enviar" type="submit" value="Enviar Respostes!"><input id="id_borrar" type="reset" value="Netejar Formurai!"></td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>
